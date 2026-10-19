@@ -19,3 +19,7 @@ Un firewall funciona como un punto de control del tráfico de red: recibe o insp
 ## Firewall desde la perspectiva de Red Team
 
 Durante el reconocimiento, el firewall condiciona qué información puede obtenerse desde una posición determinada. Las respuestas de los objetivos, los tiempos de espera y la ausencia de respuesta pueden aportar indicios sobre las políticas de filtrado, pero no permiten determinar por sí solos la configuración exacta del dispositivo.
+
+## ¿Qué buscamos como pentesters al evaluar la evasión de un firewall?
+
+Como pentesters, buscamos identificar cómo superar las restricciones de un firewall para alcanzar puertos, servicios o segmentos de red que deberían estar bloqueados. Analizamos reglas de filtrado, respuestas TCP/IP, rutas alternativas y técnicas de reconocimiento para determinar qué tráfico puede atravesar los controles y si la actividad es detectada por IDS/IPS. El objetivo es encontrar y reproducir fallos reales en los controles de seguridad, verificando los resultados mediante capturas de tráfico y registros del firewall.
