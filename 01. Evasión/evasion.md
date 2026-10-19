@@ -18,3 +18,15 @@ sudo nmap -sS -f --mtu 8 -p 1-65535 -Pn 10.129.224.220
 ```-f:``` Fragmenta los paquetes.
 
 ```--mtu``` 8: Fuerza el tamaño máximo de unidad de transmisión a 8 bytes (muy agresivo, algunos IDS se saturan o ignoran estos fragmentos).
+
+## 03. Nmap Idle Scan (Sigilo Absoluto)
+El escaneo IDLE permite escanear un objetivo sin enviar ni un solo paquete desde tu IP. Utiliza una máquina "zombie" intermedia con poco tráfico para inferir los puertos abiertos.
+
+### Comando Nmap  
+```bash
+sudo nmap -sI <IP_Zombie> -Pn -p- 10.129.224.220
+```
+```Requisito:``` Necesitas encontrar una máquina "zombie" con un IP ID predecible (global).
+
+```Ventaja:``` Es indetectable desde la perspectiva de la IP origen, porque los paquetes provienen de la IP Zombie.
+
