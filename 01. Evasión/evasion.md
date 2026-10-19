@@ -30,3 +30,10 @@ sudo nmap -sI <IP_Zombie> -Pn -p- 10.129.224.220
 
 ```Ventaja:``` Es indetectable desde la perspectiva de la IP origen, porque los paquetes provienen de la IP Zombie.
 
+## Opinión Personal 
+
+Todo depende del contexto al que te enfrentes para utilizar estos comandos, pero casi siempre la taza de éxito con los mismos es muy alta, ya luego hablaré sobre pivoting, otro nivel de enumeración desde dentro de la red.
+
+### h4ck the planet 
+
+josephgnzl-
